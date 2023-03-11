@@ -28,8 +28,8 @@ def poke_paste(info):
     name=info['name'].capitalize()
     abilities_name=[ability['ability']['name'] for ability in info['abilities']]
     print (abilities_name)
-    abilities_list= '- ' + '\n '.join(abilities_name)
-    title= f"{name}'s Abilities"
+    abilities_list='\n '.join(abilities_name)
+    title= f"{name}s Abilities"
     body=abilities_list
 
     return title,body 

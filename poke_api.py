@@ -2,7 +2,7 @@ import requests
 
 
 def main():
-    get_url=get_info_poke('TIRTH')
+    get_url=get_info_poke('tirth')
     pass 
     
     
