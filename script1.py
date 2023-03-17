@@ -26,9 +26,11 @@ def get_poke_name():
 
 def poke_paste(info):
     name=info['name'].capitalize()
-    abilities_name=[ability['ability']['name'] for ability in info['abilities']]
-    print(abilities_name)
-    abilities_list='\n '.join(abilities_name)
+    abilities = []
+    for ability in info['abilities']:
+        abilities.append(ability['ability']['name'])
+    print(abilities)
+    abilities_list='\n '.join(abilities)
     title= f"{name}s Abilities"
     body=abilities_list
 

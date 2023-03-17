@@ -1,8 +1,9 @@
 import requests
+from sys import argv
 
 
 def main():
-    get_url=get_info_poke('tirth')
+    get_info_poke(argv[1])
     pass 
     
     
